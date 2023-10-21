@@ -5,7 +5,7 @@
   --main: #ff4d29;
   --main-hover: #eb4828;
   --border: rgba(0, 0, 0, 0.08);
-  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08) ;
+  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
 }
 
 h1,
@@ -27,9 +27,29 @@ img {
   width: 100%;
 }
 
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .bg-cover {
   background-position: center !important;
   background-size: cover !important;
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+.intro h6 {
+  font-weight: 700;
+  color: var(--main);
+}
+.intro h1 {
+  color: #000;
+}
+.intro p {
+  max-width: 500px;
+  margin: auto;
 }
 
 body {
@@ -107,4 +127,113 @@ body {
 /* ======= SLIDER ==== */
 .slide1 {
   background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url(../img/bg_banner1.jpg);
+}
+
+.slide2 {
+  background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url(../img/bg_banner2.jpg);
+}
+
+/* Owl Carousel */
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  width: 60px !important;
+  height: 60px !important;
+  display: grid;
+  place-items: center;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  margin-top: -30px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  border-radius: 50% !important;
+  color: #fff !important;
+  transition: all 0.4s ease;
+}
+.owl-prev:hover,
+.owl-next:hover {
+  background-color: #fff !important;
+  color: var(--main) !important;
+}
+
+.owl-prev {
+  left: 0;
+}
+
+.owl-next {
+  right: 0;
+}
+
+/* About Section */
+.info-box {
+  display: flex;
+  align-items: center;
+}
+.info-box img {
+  width: 90px;
+  margin-right: 24px;
+}
+
+/* Milestone Section*/
+#milestone {
+  background: linear-gradient(rgba(255, 77, 41, 0.8), rgba(255, 77, 41, 0.8)), url(../img/bg_banner2.jpg);
+}
+#milestone .display-4,
+#milestone p {
+  color: #fff;
+}
+#milestone .display-4 {
+  font-weight: 700;
+}
+
+/* Services Section */
+.service-box {
+  padding: 32px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.service-box img {
+  width: unset;
+}
+.service-box h5 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+/* Project */
+.project {
+  position: relative;
+}
+.project .overlay {
+  background: linear-gradient(to bottom, rgba(9, 32, 50, 0), rgba(9, 32, 50, 0.8));
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  bottom: 0;
+  left: 0;
+}
+.project .content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 32px;
+}
+.project h1,
+.project h6 {
+  color: #fff;
+}
+.project h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.project h6::before {
+  content: "";
+  height: 2px;
+  width: 24px;
+  background-color: var(--main);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 12px;
 }/*# sourceMappingURL=style.css.map */
