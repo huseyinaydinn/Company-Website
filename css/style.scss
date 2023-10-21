@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&display=swap');
+
+//!========== General Css ============= */
+:root {
+    --body: #516171;
+    --dark: #092032;
+    --main: #ff4d29;
+    --main-hover: #eb4828;
+    --border: rgba(0, 0, 0, 0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08)
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700 !important;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+    transition: all .4s ease;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+.btn {
+    padding: 9px 24px;
+}
+
+.btn-brand {
+    background-color: var(--main);
+    color: #fff;
+    border-color: var(--main);
+    font-weight: 500;
+
+    &:hover {
+        color: #fff;
+        background-color: var(--main-hover);
+    }
+}
+
+//* ====== MAIN CSS START ======= */ 
+
+/* ===== TOP NAVBAR ==== */
+
+.top-nav {
+    background-color: var(--main);
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    i,
+    span {
+        vertical-align: middle;
+    }
+
+    p {
+        margin-bottom: 0;
+        display: inline-block;
+        margin-right: 16px;
+        color: #ffffff;
+    }
+
+    .social-links {
+        a {
+            width: 34px;
+            height: 34px;
+            background-color: rgba(255, 255, 255, 0.212);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            color: #fff;
+            font-size: 20px;
+
+            &:hover {
+                background-color: #fff;
+                color: var(--main);
+            }
+        }
+    }
+}
+
+/* ========= MENU NAVBAR ====== */
+
+.navbar {
+    box-shadow: var(--shadow);
+
+    .navbar-nav {
+        .nav-link {
+            font-weight: 500;
+
+            &:hover,
+            &:active {
+                color: var(--main);
+            }
+        }
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 26px;
+        color: var(--dark);
+
+        span {
+            color: var(--main);
+        }
+    }
+}
+
+/* ======= SLIDER ==== */
+
+.slide1 {
+    background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)),
+        url(../img/bg_banner1.jpg);
+}
