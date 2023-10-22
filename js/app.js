@@ -1,3 +1,4 @@
+// owl carousel
 $(document).ready(function () {
   // hero slider
   $("#hero-slider").owlCarousel({
@@ -31,6 +32,7 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        margin: 0,
       },
       768: {
         items: 2,
@@ -40,5 +42,14 @@ $(document).ready(function () {
         center: true,
       },
     },
+  });
+
+  $("#reviews-slider").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    dots: true,
+    items: 1,
+    smartSpeed: 800,
   });
 });
